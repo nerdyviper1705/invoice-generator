@@ -1,0 +1,151 @@
+/* Basic styles for the body */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url(./background.jpg);
+  background-size: cover;
+}
+
+/* Container for the invoice */
+#invoice {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Header styles */
+.header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.logo {
+  width: 100px;
+  height: auto;
+  margin-right: 20px;
+}
+
+.shop-details {
+  flex: 1;
+}
+
+.shop-details h1 {
+  margin: 0;
+  font-size: 24px;
+  color: #333;
+}
+
+.shop-details p {
+  margin: 5px 0;
+}
+
+/* Customer details section */
+.customer-details {
+  margin-bottom: 20px;
+}
+
+.customer-details h2 {
+  margin: 0 0 10px;
+  font-size: 18px;
+  color: #333;
+}
+
+.customer-details p {
+  margin: 5px 0;
+}
+
+.customer-details input {
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.customer-details #customer-name,
+.customer-details #customer-address {
+  width: 70%; /* Adjust width to make text boxes smaller */
+}
+
+.customer-details #customer-phone {
+  width: 150px; /* Adjust width to fit 10 digits */
+}
+
+/* Invoice items section */
+.invoice-items {
+  margin-bottom: 20px;
+}
+
+.invoice-items h2 {
+  margin: 0 0 10px;
+  font-size: 18px;
+  color: #333;
+}
+
+#items-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+#items-table th,
+#items-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+#items-table th {
+  background-color: #f4f4f4;
+}
+
+#items-table .qty,
+#items-table .price,
+#items-table .total {
+  width: 100px;
+}
+
+#items-table .qty {
+  width: 60px;
+}
+
+/* Manual price input field */
+.manual-price {
+  width: 100%; /* Ensure it stretches to fit its container */
+  box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+/* Totals section */
+.totals {
+  margin-bottom: 20px;
+}
+
+.totals p {
+  margin: 5px 0;
+  font-size: 16px;
+}
+
+/* Buttons */
+button {
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+button:hover {
+  background-color: #218838;
+}
+
+.footer {
+  background-color: #fff;
+  text-align: center;
+  padding: 20px;
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grocery Invoice Generator</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="invoice">
+      <div class="header">
+        <img
+          src="Grocery Market Logo.png"
+          alt="Grocery Shop Logo"
+          class="logo"
+        />
+        <div class="shop-details">
+          <h1>Grocery Shop</h1>
+          <p>1234 Grocery Street, City, Country</p>
+          <p>Phone: +91-123-456-7890</p>
+        </div>
+      </div>
+
+      <div class="customer-details">
+        <h2>Customer Details</h2>
+        <p>Name: <input type="text" id="customer-name" /></p>
+        <p>Phone Number: <input type="text" id="customer-phone" /></p>
+        <p>Address: <input type="text" id="customer-address" /></p>
+      </div>
+
+      <div class="invoice-items">
+        <h2>Items</h2>
+        <table id="items-table">
+          <thead>
+            <tr>
+              <th>Item</th>
+              <th>Qty</th>
+              <th>Price</th>
+              <th>Total</th>
+            </tr>
+          </thead>
+          <tbody id="items-body">
+            <!-- Items will be added here -->
+          </tbody>
+        </table>
+        <button id="add-item">Add Item</button>
+      </div>
+
+      <div class="totals">
+        <p>Total: ₹<span id="total">0.00</span></p>
+        <p>GST (2.5%): ₹<span id="gst">0.00</span></p>
+        <p>CST (2.5%): ₹<span id="cst">0.00</span></p>
+        <p>Grand Total: ₹<span id="grand-total">0.00</span></p>
+      </div>
+
+      <div class="actions">
+        <button id="print-invoice">Print Invoice</button>
+      </div>
+    </div>
+
+    <footer class="footer">©️ Pinakin Sabnis - All rights reserved</footer>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"
+      integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
